@@ -1,0 +1,52 @@
+<!--  🔧 Faulty Calculator: Performs basic arithmetic operations (+, -, *, /) with a 10% chance of intentionally returning an incorrect result to simulate faulty logic.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let x = parseInt(prompt("enter a number"));
+        let y = parseInt(prompt("enter second number"));
+        let z = prompt("enter a sign for +,-,*,/");
+        let randomNum = Math.floor(Math.random() * 100) + 1;
+
+        if (randomNum < 10) {
+            if (z == "+") {
+                console.log(x - y);
+            }
+            if (z == "-") {
+                console.log(x + y);
+            }
+            if (z == "*") {
+                console.log(x / y);
+            }
+            if (z == "/") {
+                console.log(x * y);
+            }
+        }
+
+        else {
+            if (z == "+") {
+                console.log(x + y);
+            }
+            if (z == "-") {
+                console.log(x - y);
+            }
+            if (z == "*") {
+                console.log(x * y);
+            }
+            if (z == "/") {
+                console.log(x / y);
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
